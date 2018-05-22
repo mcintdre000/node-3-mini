@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mc = require( `./controllers/messages_controller` );
 const session = require( 'express-session' );
-
+const createInitialSession = require( './middlewares/session' );
 require('dotenv').config();
 
 const app = express();
